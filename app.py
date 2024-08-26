@@ -1,7 +1,12 @@
 import os
-#
+import datetime
+
 print('Hello, Alice!')
-#
+
+current_time = datetime.datetime.now()
+
+print("Current time: ", current_time)
+
 dir_path = r'/home/ivanays/Изображения/Снимки экрана'
 
 count = 0
