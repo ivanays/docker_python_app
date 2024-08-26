@@ -7,7 +7,7 @@ current_time = datetime.datetime.now()
 
 print("Current time: ", current_time)
 
-dir_path = r'/home/ivanays/Изображения/Снимки экрана'
+dir_path = r'/var/log/'
 
 count = 0
 
