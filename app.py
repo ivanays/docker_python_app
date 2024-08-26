@@ -1,22 +1,29 @@
 import os
 import datetime
 
+# Выводим приветствие
 print('Hello, Alice!')
 
 current_time = datetime.datetime.now()
 
+# Выводим текущее время
 print("Current time: ", current_time)
 
+# Путь к рабочей директории
 dir_path = r'/var/log/'
 
+# Считаем количество файлов в рабочей директории
 count = 0
 
 for path in os.listdir(dir_path):
     if os.path.isfile(os.path.join(dir_path, path)):
         count += 1
 
+# Выводим количество файлов в рабочей директории
 print('Total number of files: ', count)
 
+
+# Выводит 10 самых больших файла в рабочей директории
 print('Top 10 lagests files (in KB): ')
 
 list_of_files = filter( lambda x: os.path.isfile(os.path.join(dir_path, x)),
